@@ -12,6 +12,7 @@ import { MaterialModule } from './material.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { CurrentTrainingComponent } from './training/current-training/current-training.component';
+import { ExcerciseService } from './training/excercise.service';
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { PastTrainingComponent } from './training/past-training/past-training.component';
 import { StopTimerDialogComponent } from './training/stop-timer-dialog.component';
@@ -41,7 +42,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, ExcerciseService],
   bootstrap: [AppComponent],
   entryComponents: [StopTimerDialogComponent],
 })

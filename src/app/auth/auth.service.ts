@@ -43,6 +43,6 @@ export class AuthService {
   }
 
   isAuth() {
-    return this.user != null; // it evaluates as if user is null then return false else true.
+    return this.user ? this.user : null; // it evaluates as if user is null then return false else true.
   }
 }
